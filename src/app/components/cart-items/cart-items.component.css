@@ -1,0 +1,116 @@
+.card {
+    border-bottom-width: 1px !important;
+    border-bottom-style: solid;
+    border-top-width: 1px !important;
+    border-top-style: solid;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+    display: flex;
+    flex-direction: row;
+    border-color: #3e4f62;
+  }
+  img {
+    width: 12rem !important;
+    margin-left: 0rem !important;
+    margin-right: 0rem !important;
+    flex-shrink: 0 !important;
+    border-radius: 10px;
+  }
+  .cart-details {
+    padding-left: 2rem !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    flex: 1 1 auto !important;
+    width: 100%;
+  }
+  .detail-contain {
+    padding-bottom: 3rem !important;
+    display: flex;
+  }
+  .name-category {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  .cart-name {
+    margin-bottom: 1rem !important;
+    font-size: 1.25rem !important;
+    font-weight: 500 !important;
+    color: #ffffff;
+  }
+  .cart-category {
+    color: #e3e5e8;
+  }
+  .quantity-price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+  }
+  
+  .removee {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .button-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .quantity-selecter {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .counter-btn {
+    color: #798bc8;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    border-color: transparent;
+    font-size: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .counter-value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.87);
+    background: #162a41;
+    padding: 0.75rem 0.75rem;
+    border: 1px solid #3e4f62;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s,
+      box-shadow 0.2s;
+  }
+  
+  .counter-btn:hover {
+    background-color: #0056b3;
+  }
+  .prize {
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+  .remoovoo {
+    color: #c74b95;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  .iluudutuu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+  }
+  .textt {
+    margin-left: 8px;
+  }
+  
