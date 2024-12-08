@@ -1,0 +1,38 @@
+<div class="card">
+    <img [src]="image" alt="Product Image" class="product-image" />
+    <div class="cart-details">
+      <div class="detail-contain">
+        <div class="name-category">
+          <span class="cart-name">{{ product.name }}</span>
+          <span class="cart-category">{{ product.category }}</span>
+        </div>
+        <div class="quantity-price">
+          <div class="button-layout">
+            <div class="quantity-selecter">
+              <button class="counter-btn" (click)="decrement()">-</button>
+              <div class="counter-value">{{ this.quantity }}</div>
+  
+              <button class="counter-btn" (click)="increment()">+</button>
+            </div>
+          </div>
+          <div class="removee">
+            <span class="prize">{{ product.price }}$</span>
+            <span class="remoovoo" (click)="onDelete()">Remove</span>
+          </div>
+        </div>
+      </div>
+      <div class="iluudutuu">
+        <span
+          ><i class="pi pi-envelope"></i>
+          <span class="textt">Order today.</span></span
+        ><span
+          ><i class="pi pi-send"></i>
+          <span class="textt">Delivery by Dec 23. </span></span
+        ><span
+          ><i class="pi pi-exclamation-triangle"></i>
+          <span class="textt">Only 8 Available.</span></span
+        >
+      </div>
+    </div>
+  </div>
+  
