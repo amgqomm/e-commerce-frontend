@@ -1,0 +1,210 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 1504px;
+  }
+  
+  .card {
+    background-color: #293b51;
+    padding: 1.5rem;
+    box-shadow: 0 3px 4px #0000001a, 0 24px 36px #0000000a;
+    border-radius: 14px;
+    margin-top: 20px;
+  }
+  
+  .grid {
+    margin-bottom: 4rem !important;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -1rem;
+    margin-left: -1rem;
+    margin-top: -1rem;
+  }
+  .left {
+    flex: 0 0 auto;
+    padding: 1rem;
+    width: 50%;
+    box-sizing: border-box;
+  }
+  .right {
+    padding-top: 5rem !important;
+    padding-bottom: 1rem !important;
+    padding-right: 5rem !important;
+    flex: 0 0 auto;
+    width: 50%;
+  }
+  
+  .gallery-container {
+    display: flex;
+    width: 100%;
+  }
+  .thumbnail-list {
+    row-gap: 1rem;
+    width: 16.6667% !important;
+    justify-content: space-between !important;
+    flex-direction: column !important;
+    display: flex !important;
+  }
+  .thumbnail img {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  .main-image img {
+    width: 480px;
+    height: auto;
+  }
+  
+  .title-of-product {
+    margin-bottom: 1.5rem;
+    font-size: 2rem !important;
+    color: #ffffff;
+    font-weight: 500 !important;
+    align-items: center;
+  }
+  
+  .price {
+    display: flex;
+    margin-bottom: 2rem !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+  .dollar {
+    color: white;
+    font-size: 1.75rem !important;
+    font-weight: 500 !important;
+    display: block !important;
+  }
+  
+  .number {
+    display: flex;
+    justify-content: center;
+    background-color: #162a41;
+  }
+  
+  .review {
+    color: white;
+    margin-top: 50px;
+    padding: 1.5rem;
+  }
+  
+  .ui-tabview-panel {
+    margin-bottom: 20px;
+  }
+  
+  .ui-tabview-nav li:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  .p-element max-w-full {
+    background-color: #1b2a38;
+    border-radius: 8px;
+    color: #ecf0f1;
+  }
+  
+  .size-selector {
+    text-align: center;
+  }
+  
+  .size-label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .sizes {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .size-btn {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .size-btn.selected,
+  .size-btn:hover {
+    color: #ffffff;
+    border-color: #434190;
+  }
+  
+  .size-guide {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    cursor: pointer;
+  }
+  
+  .size-guide:hover {
+    text-decoration: underline;
+  }
+  .size-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .quantity {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+    display: block;
+  }
+  
+  .button-layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .quantity-selecter {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .counter-btn {
+    color: #798bc8;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    border-color: transparent;
+    font-size: 40px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .counter-value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.87);
+    background: #162a41;
+    padding: 0.75rem 0.75rem;
+    border: 1px solid #3e4f62;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s,
+      box-shadow 0.2s;
+  }
+  
+  .counter-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  p-button {
+    margin-right: 60px;
+  }
+  :host ::ng-deep .p-button {
+    background-color: #798bc8;
+    border-color: #798bc8;
+  }
+  

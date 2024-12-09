@@ -1,0 +1,15 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 1504px;
+  }
+  .card {
+    background-color: #293b51;
+    padding: 1.5rem;
+    box-shadow: 0 3px 4px #0000001a, 0 24px 36px #0000000a;
+    border-radius: 14px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  

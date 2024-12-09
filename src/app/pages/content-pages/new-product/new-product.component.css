@@ -1,0 +1,195 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 1504px;
+  }
+  .card {
+    background-color: #293b51;
+    padding: 1.5rem;
+    box-shadow: 0 3px 4px #0000001a, 0 24px 36px #0000000a;
+    border-radius: 14px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .left {
+    flex: 0 0 auto;
+    width: 66.6667%;
+  }
+  .right {
+    display: flex !important;
+    width: 33.3333% !important;
+    row-gap: 1rem !important;
+    flex: 1 1 0% !important;
+    flex-direction: column !important;
+  }
+  .description {
+    font-size: 1.75rem;
+  }
+  .right-container {
+    border: 1px solid #3e4f62;
+    border-radius: 6px;
+    padding: 6px;
+  }
+  .left-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .left-container {
+    margin-bottom: 1rem;
+    flex: 0 0 auto;
+    padding: 1rem;
+    width: 100%;
+  }
+  .left-container1 {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: calc(33% - 1px);
+  }
+  .left-container1 input {
+    width: 300px;
+  }
+  .left-container input {
+    width: 100%;
+  }
+  .input {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.87);
+    background: #162a41;
+    padding: 0.75rem 0.75rem;
+    border: 1px solid #3e4f62;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s,
+      box-shadow 0.2s;
+    appearance: none;
+    border-radius: 6px;
+  }
+  textarea {
+    color: white;
+    background-color: #162a41;
+    border: 1px solid #3e4f62;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s,
+      box-shadow 0.2s;
+    width: 100% !important;
+    height: 200px;
+  }
+  .upload-img {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    gap: 1rem;
+  }
+  .upload-img1 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    gap: 1rem;
+  }
+  .upload-img1 img {
+    width: 222px;
+    height: 300px;
+    border-radius: 6px;
+  }
+  .btn {
+    width: 100%;
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  button {
+    padding: 12px;
+    border-radius: 6px;
+    background-color: #162a41;
+    color: white;
+    border: 1px solid #3e4f62;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s,
+      box-shadow 0.2s;
+    cursor: pointer;
+  }
+  .right-container6 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #3e4f62;
+    border-radius: 6px;
+  }
+  .right-container7 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .discard {
+    background-color: transparent;
+    border-color: #fca5a5;
+    color: #fca5a5;
+    width: 46%;
+  }
+  .submit {
+    width: 46%;
+  }
+  .discard:hover {
+    -webkit-filter: brightness(120%);
+  }
+  .submit:hover {
+    -webkit-filter: brightness(120%);
+  }
+  :host ::ng-deep .p-dropdown {
+    background-color: transparent;
+    border-color: #3e4f62;
+    margin: 10px;
+  }
+  :host ::ng-deep .p-dropdown-panel {
+    background-color: #293b51;
+    color: white;
+  }
+  :host ::ng-deep .p-dropdown .p-dropdown-label.p-placeholder {
+    color: white;
+  }
+  :host ::ng-deep .p-dropdown .p-dropdown-label {
+    background-color: transparent;
+    color: white;
+  }
+  :host
+    ::ng-deep
+    .p-dropdown-panel
+    .p-dropdown-items
+    .p-dropdown-item.p-highlight.p-focus {
+    color: white;
+  }
+  :host ::ng-deep .p-dropdown-panel .p-dropdown-items .p-dropdown-item {
+    color: white;
+  }
+  :host
+    ::ng-deep
+    .p-dropdown-panel
+    .p-dropdown-items
+    .p-dropdown-item:not(.p-highlight).p-focus {
+    color: white;
+    background: transparent;
+  }
+  .category-container {
+    width: 100%;
+    border-bottom: 1px solid #3e4f62;
+    padding: 8px;
+  }
+  :host ::ng-deep .p-rating {
+    padding: 10px;
+    margin-top: 10px;
+  }
+  :host ::ng-deep .p-rating .p-rating-item .p-rating-icon {
+    color: white;
+  }
+  
