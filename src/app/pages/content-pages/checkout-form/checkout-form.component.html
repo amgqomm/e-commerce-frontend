@@ -1,0 +1,136 @@
+<div class="content">
+    <div class="card">
+      <div class="left-container">
+        <div class="description1">Checkout</div>
+        <div class="contact-em">
+          <div class="description" name="email" [(ngModel)]="order.email">
+            Contact Information
+          </div>
+          <input type="text" placeholder="Email" class="input" />
+          <div class="mdhe-baisan">
+            <p-checkbox
+              [(ngModel)]="checked"
+              name="checked"
+              [binary]="true"
+              inputId="binary"
+            />
+            <span>Email me with news and offers</span>
+          </div>
+          <div class="main-input">
+            <div class="description">Shipping</div>
+            <div class="iigii">
+              <input
+                [(ngModel)]="order.country"
+                name="country"
+                type="text"
+                placeholder="Country/City"
+                class="input"
+              />
+            </div>
+            <div class="iigii1">
+              <input
+                [(ngModel)]="order.name"
+                name="name"
+                type="text"
+                placeholder="Name"
+                class="input1"
+              />
+              <input
+                [(ngModel)]="order.lastname"
+                name="lname"
+                type="text"
+                placeholder="Last name"
+                class="input1"
+              />
+            </div>
+            <div class="iigii">
+              <input
+                [(ngModel)]="order.address"
+                name="address"
+                type="text"
+                placeholder="Address"
+                class="input"
+              />
+            </div>
+            <div class="iigii">
+              <input
+                [(ngModel)]="order.apartment"
+                name="apartment"
+                type="text"
+                placeholder="Apartment,suite, etc"
+                class="input"
+              />
+            </div>
+            <div class="iigii1">
+              <input
+                type="text"
+                name="postalCode"
+                [(ngModel)]="order.postalCode"
+                placeholder="Postal Code"
+                class="input1"
+              />
+              <input
+                type="text"
+                name="city"
+                [(ngModel)]="order.city"
+                placeholder="City"
+                class="input1"
+              />
+            </div>
+            <div class="mdhe-baisan">
+              <p-checkbox
+                [(ngModel)]="checked1"
+                name="checked"
+                [binary]="true"
+                inputId="binary"
+              />
+              <span>Save for next purchase</span>
+            </div>
+          </div>
+          <div class="baagii">
+            <button routerLink="/shopping-cart" class="submit">
+              Return to Cart
+            </button>
+            <button class="submit" (click)="orderCart()">
+              Continue to Shipping
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="description2">Your cart</div>
+        <div class="rdr-cntnr">
+          <img
+            src="https://verona.primeng.org/assets/demo/images/ecommerce/shop/shop-1.png"
+            alt=""
+          />
+          <div class="real1">
+            <div class="rowli">
+              <div class="dooshluuliy">Product Name</div>
+              <div>Black | Large</div>
+            </div>
+            <div class="dooshluuliy">$123.00</div>
+          </div>
+        </div>
+        <div class="iigii">
+          <input type="text" placeholder="Promo Code" class="input" />
+        </div>
+        <div class="real">
+          <div>Subtotal</div>
+          <div>$123.00</div>
+        </div>
+        <div class="real">
+          <div>Shipping</div>
+          <div>Free</div>
+        </div>
+        <div class="real">
+          <div>Total</div>
+          <div>$123.00</div>
+        </div>
+        <div class="germany">
+          <span class="germany1">No additional duties or taxes.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  

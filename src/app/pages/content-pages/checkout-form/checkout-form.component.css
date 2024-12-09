@@ -1,0 +1,172 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 1504px;
+  }
+  .card {
+    background-color: #293b51;
+    padding: 4rem;
+    box-shadow: 0 3px 4px #0000001a, 0 24px 36px #0000000a;
+    border-radius: 14px;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .input {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.87);
+    background: #162a41;
+    padding: 0.75rem 0.75rem;
+    border: 1px solid #3e4f62;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s,
+      box-shadow 0.2s;
+    appearance: none;
+    border-radius: 6px;
+  }
+  .input1 {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.87);
+    background: #162a41;
+    padding: 0.75rem 0.75rem;
+    border: 1px solid #3e4f62;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s,
+      box-shadow 0.2s;
+    appearance: none;
+    border-radius: 6px;
+  }
+  .input {
+    width: 100%;
+  }
+  .input1 {
+    width: 50%;
+  }
+  .description {
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 19px;
+    margin-top: 25px;
+  }
+  .description1 {
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 19px;
+  }
+  .mdhe-baisan {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-top: 20px;
+  }
+  .left-container {
+    width: 50%;
+  }
+  .right-container {
+    width: 50%;
+  }
+  .main-input {
+    display: flex;
+    flex-direction: column;
+  }
+  .iigii {
+    margin-bottom: 20px;
+  }
+  .iigii1 {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  button {
+    padding: 12px;
+    border-radius: 6px;
+    background-color: #162a41;
+    color: white;
+    border: 1px solid #3e4f62;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s,
+      box-shadow 0.2s;
+    cursor: pointer;
+  }
+  .submit:hover {
+    -webkit-filter: brightness(120%);
+  }
+  .baagii {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .right-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-left: 80px;
+    gap: 1rem;
+  }
+  .description2 {
+    font-weight: 400;
+    color: white;
+    font-size: 24px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+  }
+  img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 10px;
+  }
+  .rdr-cntnr {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+  }
+  .real {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  .real1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 15px;
+  }
+  .rowli {
+    display: flex;
+    flex-direction: column;
+  }
+  .dooshluuliy {
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .germany {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background-color: #fef1c3;
+    color: black;
+    border-radius: 6px;
+    margin-top: 20px;
+  }
+  .message-box1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    height: 50px;
+    width: 90%;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+  
