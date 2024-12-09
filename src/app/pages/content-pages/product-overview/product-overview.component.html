@@ -1,1 +1,90 @@
-<p>product-overview works!</p>
+<div class="content">
+    <div class="card">
+      <div class="grid">
+        <div class="left">
+          <div class="gallery-container">
+            <div class="thumbnail-list">
+              <div
+                *ngFor="let imageUrl of images"
+                class="thumbnail"
+                (click)="selectImage(imageUrl)"
+              >
+                <img [src]="imageUrl" alt="Thumbnail" />
+              </div>
+            </div>
+            <div class="main-image">
+              <img [src]="selectedImage" alt="Main Image" />
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="title-of-product">{{ product?.name }}</div>
+          <div class="price">
+            <span class="dollar">{{ product?.price }} $</span>
+            <span class="dollar"> ⭐{{ product?.rating }}</span>
+          </div>
+          <div class="size-selector">
+            <div class="size-container">
+              <label for="size" class="size-label">Size</label>
+              <label class="size-guide">Size Guide</label>
+            </div>
+            <div class="sizes">
+              <button class="size-btn">XS</button>
+              <button class="size-btn">S</button>
+              <button class="size-btn">M</button>
+              <button class="size-btn">L</button>
+              <button class="size-btn">XL</button>
+            </div>
+          </div>
+          <div class="quantity">Quantity</div>
+          <div class="button-layout">
+            <div class="quantity-selecter">
+              <button class="counter-btn" (click)="decrement()">-</button>
+              <div class="counter-value">{{ counter }}</div>
+  
+              <button class="counter-btn" (click)="increment()">+</button>
+            </div>
+            <p-button label="Add To Cart" (click)="addToCart(product.id)" />
+          </div>
+        </div>
+        <div class="review">
+          <p-tabView>
+            <p-tabPanel class="header" header="Details ">
+              <p>
+                Sed us et iusto odio dignissimos ducimus qui blanditiis
+                praesentium voluptatum deleniti atque corrupti quos dolores et
+                quas molestias excepturi sint occaecati cupiditate non provident,
+                similique sunt in culpa qui officia deserunt mollitia animi, id
+                est laborum et dolorum fuga. Et harum quidem rerum facilis est et
+                expedita distinctio. Nam libero tempore, cum soluta nobis est
+                eligendi optio cumque nihil impedit quo minus.
+              </p>
+            </p-tabPanel>
+            <p-tabPanel class="header" header="  Reviews">
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae vitae
+                dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+                eos qui ratione voluptatem sequi nesciunt. Consectetur, adipisci
+                velit, sed quia non numquam eius modi.
+              </p>
+            </p-tabPanel>
+            <p-tabPanel class="header" header="Shipping and Returns">
+              <p>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti atque corrupti quos
+                dolores et quas molestias excepturi sint occaecati cupiditate non
+                provident, similique sunt in culpa qui officia deserunt mollitia
+                animi, id est laborum et dolorum fuga. Et harum quidem rerum
+                facilis est et expedita distinctio. Nam libero tempore, cum soluta
+                nobis est eligendi optio cumque nihil impedit quo minus.
+              </p>
+            </p-tabPanel>
+          </p-tabView>
+        </div>
+      </div>
+    </div>
+  </div>
+  

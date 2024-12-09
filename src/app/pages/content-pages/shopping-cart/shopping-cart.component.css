@@ -1,0 +1,74 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 1504px;
+  }
+  .card {
+    background-color: #293b51;
+    padding: 1.5rem;
+    box-shadow: 0 3px 4px #0000001a, 0 24px 36px #0000000a;
+    border-radius: 14px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .cart-description {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    gap: 20px;
+  }
+  
+  .cart-bottom {
+    display: flex;
+    flex-direction: column;
+    margin-left: 300px;
+    margin-top: 40px;
+  }
+  .cart-bottom-top {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-bottom: 1px solid #3e4f62;
+    padding-bottom: 30px;
+  }
+  .bottom-des {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  :host ::ng-deep .p-button {
+    background-color: #798bc8;
+    border-color: #798bc8;
+  }
+  .cart-bottom-bottom {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .doodoh {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  .top {
+    font-size: 29px;
+    font-weight: 400;
+  }
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  

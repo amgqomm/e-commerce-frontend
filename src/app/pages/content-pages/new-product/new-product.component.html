@@ -1,1 +1,128 @@
-<p>new-product works!</p>
+<div class="content">
+    <div class="card">
+      <span class="description">Create Product</span>
+      <div class="grid">
+        <div class="left">
+          <div class="left-grid">
+            <div class="left-container">
+              <input
+                type="text"
+                [(ngModel)]="product.name"
+                placeholder="Product Name"
+                class="input"
+              />
+            </div>
+            <div class="left-container1">
+              <input
+                type="text"
+                [(ngModel)]="product.price"
+                placeholder="Product Price"
+                class="input"
+              />
+            </div>
+            <div class="left-container1">
+              <input
+                type="text"
+                placeholder="Product Code"
+                [(ngModel)]="product.code"
+                class="input"
+              />
+            </div>
+            <div class="left-container1">
+              <input
+                type="text"
+                placeholder="Product SKU"
+                [(ngModel)]="product.sku"
+                class="input"
+              />
+            </div>
+            <div class="left-container">
+              <textarea
+                pInputTextarea
+                [(ngModel)]="product.description"
+                placeholder="Product Description"
+              ></textarea>
+            </div>
+            <div class="upload-img">
+              <button
+                [style.display]="displayStyle"
+                (click)="uploadImage()"
+                class="upload-image-button"
+              >
+                Upload Image Url
+              </button>
+  
+              <div
+                *ngFor="let url of product.imageUrls; let i = index"
+                class="upload-img-containerr"
+              >
+                <input
+                  type="text"
+                  [(ngModel)]="product.imageUrls[i]"
+                  placeholder="Image URL"
+                  class="input"
+                />
+              </div>
+            </div>
+  
+            <div class="btn">
+              <button
+                [style.display]="displayStylee"
+                (click)="addInput()"
+                class="add-input-button"
+              >
+                Add Input
+              </button>
+            </div>
+            <div class="upload-img1">
+              <div *ngFor="let img of addImageUrls">
+                <img [src]="img" alt="test" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="right-container">
+            <div class="category-container">Rating</div>
+            <p-rating [(ngModel)]="product.rating" [cancel]="false" />
+          </div>
+          <div class="right-container">
+            <div class="category-container">Colors</div>
+            <p-dropdown
+              [options]="colors"
+              [(ngModel)]="product.color"
+              optionLabel="label"
+              optionValue="value"
+              name="color"
+              placeholder="Choose a Color"
+            ></p-dropdown>
+          </div>
+          <div class="right-container">
+            <div class="category-container">Category</div>
+            <p-dropdown
+              [options]="categories"
+              [(ngModel)]="product.category"
+              optionLabel="label"
+              optionValue="value"
+              name="category"
+              placeholder="Choose a Category"
+            ></p-dropdown>
+          </div>
+          <div class="right-container6">
+            <div>In Stock</div>
+            <div>
+              <p-inputSwitch
+                [(ngModel)]="product.stock"
+                (onChange)="onStockChange()"
+              />
+            </div>
+          </div>
+          <div class="right-container7">
+            <button class="discard" (click)="onDiscard()">Discard</button>
+            <button class="submit" (click)="onSubmit()">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

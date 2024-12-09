@@ -1,1 +1,25 @@
-<p>product-list works!</p>
+<div class="content">
+    <div class="card">
+      <div class="main-description">
+        <div class="top-description">Popular Products</div>
+        <div class="bottom-description">Exclusive Selection</div>
+      </div>
+  
+      <div class="inner-content">
+        <div class="inner-card" *ngFor="let product of products">
+          <app-product-card [product]="product"> </app-product-card>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="top-description1">All Products</div>
+      <div class="inner-content1">
+        <div class="inner-card1" *ngFor="let productsWithCart of products1">
+          <app-product-card-with-cart
+            [product]="productsWithCart"
+          ></app-product-card-with-cart>
+        </div>
+      </div>
+    </div>
+  </div>
+  
