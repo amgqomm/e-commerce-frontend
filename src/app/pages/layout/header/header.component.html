@@ -1,0 +1,23 @@
+<nav>
+    <a routerLink="/product-over-view/1"
+      ><img
+        src="https://verona.primeng.org/assets/layout/images/logo-light.png"
+        alt="logo"
+        class="nav-logo"
+    /></a>
+    <div class="nav-title-search">
+      <p class="nav-title">E-Commerce Web</p>
+      <div class="nav-search">
+        <div class="auth">
+          <div *ngIf="!isAuthenticated">
+            <a routerLink="/register">Register</a>
+          </div>
+          <div *ngIf="!isAuthenticated"><a routerLink="/login">Login</a></div>
+        </div>
+        <div *ngIf="isAuthenticated">
+          <a routerLink="" (click)="logout()">Logout</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
