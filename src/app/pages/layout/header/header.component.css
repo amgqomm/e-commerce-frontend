@@ -1,0 +1,42 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 5rem;
+    background-color: #293b51;
+    color: white;
+    width: 100%;
+  }
+  
+  .nav-logo {
+    width: 3rem;
+    margin-right: 20px;
+  }
+  
+  .nav-title-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .nav-title {
+    margin-right: auto;
+  }
+  
+  .nav-search {
+    margin-left: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+  }
+  .auth {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+  

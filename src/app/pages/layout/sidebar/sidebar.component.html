@@ -1,0 +1,68 @@
+<div class="container">
+    <a routerLink="/product-over-view/1"
+      ><i
+        class="pi pi-clone"
+        pTooltip="Product Overview"
+        tooltipPosition="right"
+        tooltipStyleClass="custom-tooltip"
+      ></i
+    ></a>
+    <a routerLink="/product-list"
+      ><i
+        class="pi pi-list"
+        pTooltip="Product List"
+        tooltipPosition="right"
+        tooltipStyleClass="custom-tooltip"
+      ></i
+    ></a>
+    <a *ngIf="isAuthenticated" routerLink="/new-product"
+      ><i
+        class="pi pi-search-plus"
+        pTooltip="New Product"
+        tooltipPosition="right"
+        tooltipStyleClass="custom-tooltip"
+      ></i
+    ></a>
+    <a *ngIf="isAuthenticated" routerLink="/shopping-cart"
+      ><i
+        class="pi pi-shopping-bag"
+        pTooltip="Shopping Cart"
+        tooltipPosition="right"
+        tooltipStyleClass="custom-tooltip"
+      ></i
+    ></a>
+  
+    <a *ngIf="isAuthenticated" routerLink="/checkout-form"
+      ><i
+        class="pi pi-check-square"
+        pTooltip="Checkout Form"
+        tooltipPosition="right"
+        tooltipStyleClass="custom-tooltip"
+      ></i
+    ></a>
+    <a *ngIf="isAuthenticated" routerLink="/order-history"
+      ><i
+        class="pi pi-history"
+        pTooltip="Order History"
+        tooltipPosition="right"
+        tooltipStyleClass="custom-tooltip"
+      ></i
+    ></a>
+    <a *ngIf="isAuthenticated" routerLink="/user-management"
+      ><i
+        class="pi pi-user"
+        pTooltip="User Management"
+        tooltipPosition="right"
+        tooltipStyleClass="custom-tooltip"
+      ></i
+    ></a>
+    <a *ngIf="isAdmin" routerLink="/users"
+      ><i
+        class="pi pi-shield"
+        pTooltip="User Management"
+        tooltipPosition="right"
+        tooltipStyleClass="custom-tooltip"
+      ></i
+    ></a>
+  </div>
+  
