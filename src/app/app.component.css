@@ -1,0 +1,52 @@
+app-header {
+    height: 5rem;
+    padding: 0 2rem 0 1rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    background-color: #293b51;
+    color: white;
+  }
+  app-sidebar {
+    padding: 5px;
+    position: fixed;
+    width: 5rem;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 5rem);
+    left: 0;
+    top: 5rem;
+    -webkit-user-select: none;
+    user-select: none;
+    background-color: #293b51;
+    z-index: 999;
+    color: white;
+  }
+  .layout {
+    margin-left: 5rem;
+    padding-top: 5rem;
+    background-color: #162a41;
+    box-shadow: inset 0 3px 4px #0000001a;
+    border-top-left-radius: 30px;
+    border-top: 1px solid #3e4f62;
+    height: calc(100vh - 5rem);
+    overflow: auto;
+    padding-right: 50px;
+    padding: 2rem;
+    margin-top: 5rem;
+    color: white;
+  
+    box-sizing: border-box;
+  }
+  .content1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
