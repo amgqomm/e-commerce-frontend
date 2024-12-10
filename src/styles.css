@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  margin: 0;
+  font-family: Lato, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: #293b51;
+}
+.custom-tooltip {
+  font-size: 12px;
+  padding: 4px 8px;
+  color: white;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.p-tabview .p-tabview-panels {
+  background: #293b51;
+  padding: 1rem;
+  border: 0 none;
+  color: white;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.p-tabview .p-tabview-nav li .p-tabview-nav-link {
+  background-color: #293b51;
+  color: white;
+}
+.p-tabview .p-tabview-nav {
+  background: #293b51;
+  border-width: 0 0 2px 0;
+}
