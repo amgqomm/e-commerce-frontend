@@ -1,7 +1,14 @@
+/**
+ * Author: Khanjiguur A.
+ * 
+ * This component handles user login functionality. It includes methods for handling user inputs, submitting the login form, and managing errors.
+ * The component relies on AuthService for authentication and Router for navigation.
+ */
+
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { AuthService } from '../../../services/auth.service';
+import { AuthService } from '../../../services/auth-service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -22,13 +29,16 @@ export class LoginComponent {
   errorMessage: string = '';
 
   async handleSubmit() {
+    // Displays an error if email or password is missing.
     if (!this.email || !this.password) {
       this.showError('Email and Password is required');
       return;
     }
 
     try {
+      // Calls the login method from AuthService.
       const response = await this.authService.login(this.email, this.password);
+      
       if (response.statusCode == 200) {
         console.log('Success');
         localStorage.setItem('token', response.token);

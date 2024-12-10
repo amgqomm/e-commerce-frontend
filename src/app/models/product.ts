@@ -1,3 +1,10 @@
+/**
+ * Product Class
+ * Represents the data structure for a product in the system.
+ * 
+ * Author: Enkh-Amgalan G.
+ */
+
 export class Product {
     id: number | undefined;
     name: string | undefined;
