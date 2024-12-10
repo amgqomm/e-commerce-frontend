@@ -1,9 +1,17 @@
+/**
+ * Author: Khanjiguur A.
+ * 
+ * This component handles user registration functionality. It provides methods to manage user inputs and submission for registration. 
+ * The component uses ReactiveFormsModule for form handling, AuthService for user registration logic, and Router for navigation.
+ */
+
 import { Component, OnInit } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
-import { AuthService } from '../../../services/auth.service';
+import { AuthService } from '../../../services/auth-service';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+
 @Component({
   selector: 'app-register',
   standalone: true,
@@ -19,7 +27,9 @@ export class RegisterComponent implements OnInit {
     role: '',
     city: '',
   };
+
   ngOnInit(): void {}
+
   errorMessage: string = '';
 
   constructor(
@@ -28,6 +38,7 @@ export class RegisterComponent implements OnInit {
   ) {}
 
   async handleSubmit() {
+    // Check if all form fields are filled
     if (
       !this.formData.name ||
       !this.formData.email ||
@@ -39,6 +50,7 @@ export class RegisterComponent implements OnInit {
       return;
     }
 
+    // Confirm user wants to register
     const confirmRegistration = confirm(
       'Are you sure you want to register this user?'
     );
@@ -52,6 +64,7 @@ export class RegisterComponent implements OnInit {
         throw new Error('No token found');
       }
 
+      // Call AuthService to register the user
       const response = await this.authService.register(this.formData, token);
       if (response.statusCode === 200) {
         this.router.navigate(['/users']);

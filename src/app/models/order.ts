@@ -1,3 +1,10 @@
+/**
+ * Order Class
+ * Represents the data structure for an order in the system.
+ * 
+ * Author: Enkh-Amgalan G.
+ */
+
 export class Order {
     id: number | undefined;
     orderDetails: string[] = [];
