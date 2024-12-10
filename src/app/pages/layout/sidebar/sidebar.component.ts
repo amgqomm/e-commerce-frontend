@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { RouterModule, RouterOutlet, RouterLink } from '@angular/router';
 import { TooltipModule } from 'primeng/tooltip';
 import { CommonModule } from '@angular/common';
-import { AuthService } from '../../../services/auth.service';
+import { AuthService } from '../../../services/auth-service';
 import { log } from 'console';
 
 @Component({

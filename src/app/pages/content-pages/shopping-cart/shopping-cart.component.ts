@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { CartService } from '../../../services/cart.service';
+import { CartService } from '../../../services/cart-service';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
-import { CartItemsComponent } from '../../../component/cart-items/cart-items.component';
+import { CartItemsComponent } from '../../../components/cart-items/cart-items.component';
 import { Product } from '../../../models/product';
 import { CartDetails } from '../../../models/cart-details';
 import { ButtonModule } from 'primeng/button';
-import { ProductService } from '../../../services/product.service';
+import { ProductService } from '../../../services/product-service';
 
 @Component({
   selector: 'app-shopping-cart',

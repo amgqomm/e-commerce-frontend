@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductCardComponent } from '../../../component/product-card/product-card.component';
+import { ProductCardComponent } from '../../../components/product-card/product-card.component';
 import { CommonModule } from '@angular/common';
-import { ProductCardWithCartComponent } from '../../../component/product-card-with-cart/product-card-with-cart.component';
+import { ProductCardWithCartComponent } from '../../../components/product-card-with-cart/product-card-with-cart.component';
 import { Product } from '../../../models/product';
-import { ProductService } from '../../../services/product.service';
+import { ProductService } from '../../../services/product-service';
 import { DataViewModule } from 'primeng/dataview';
 @Component({
   selector: 'app-product-list',

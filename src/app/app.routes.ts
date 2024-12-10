@@ -1,17 +1,17 @@
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './pages/Authentication/login/login.component';
-import { RegisterComponent } from './pages/Authentication/register/register.component';
+import { LoginComponent } from './pages/authentication/login/login.component';
+import { RegisterComponent } from './pages/authentication/register/register.component';
 import { AppComponent } from './app.component';
-import { ProductListComponent } from './pages/contentpages/product-list/product-list.component';
-import { ProductOverviewComponent } from './pages/contentpages/product-overview/product-overview.component';
-import { NewProductComponent } from './pages/contentpages/new-product/new-product.component';
-import { OrderHistoryComponent } from './pages/contentpages/order-history/order-history.component';
-import { ShoppingCartComponent } from './pages/contentpages/shopping-cart/shopping-cart.component';
-import { CheckoutFormComponent } from './pages/contentpages/checkout-form/checkout-form.component';
-import { usersGuard, adminGuard } from './services/users.guard';
-import { UserManagementComponent } from './pages/contentpages/user-management/user-management.component';
-import { UserlistComponent } from './component/user-list/user-list.component';
-import { UpdateuserComponent } from './component/update-user/update-user.component';
+import { ProductListComponent } from './pages/content-pages/product-list/product-list.component';
+import { ProductOverviewComponent } from './pages/content-pages/product-overview/product-overview.component';
+import { NewProductComponent } from './pages/content-pages/new-product/new-product.component';
+import { OrderHistoryComponent } from './pages/content-pages/order-history/order-history.component';
+import { ShoppingCartComponent } from './pages/content-pages/shopping-cart/shopping-cart.component';
+import { CheckoutFormComponent } from './pages/content-pages/checkout-form/checkout-form.component';
+import { usersGuard, adminGuard } from './services/users-guard';
+import { UserManagementComponent } from './pages/content-pages/user-management/user-management.component';
+import { UserlistComponent } from './components/user-list/user-list.component';
+import { UpdateuserComponent } from './components/update-user/update-user.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
