@@ -1,8 +1,15 @@
+/**
+ * UpdateUserComponent
+ * A component for updating user details.
+ * 
+ * Author: Enkh-Amgalan G.
+ */
+
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
-import { AuthService } from '../../services/auth.service';
+import { AuthService } from '../../services/auth-service';
 
 @Component({
   selector: 'app-updateuser',
@@ -12,6 +19,12 @@ import { AuthService } from '../../services/auth.service';
   styleUrl: './update-user.component.css',
 })
 export class UpdateuserComponent implements OnInit {
+  /**
+   * Constructor for dependency injection.
+   * @param authService Provides methods for user authentication and data retrieval.
+   * @param router Handles navigation between routes.
+   * @param route Accesses route parameters for dynamic routing.
+   */
   constructor(
     private readonly authService: AuthService,
     private readonly router: Router,
@@ -22,13 +35,22 @@ export class UpdateuserComponent implements OnInit {
   userData: any = {};
   errorMessage: string = '';
 
+  /**
+   * Lifecycle hook called on component initialization.
+   * Fetches user details by ID.
+   */
   ngOnInit(): void {
     this.getUserById();
   }
 
+  /**
+   * Fetches user details based on the user ID from the route.
+   */
   async getUserById() {
     this.userId = this.route.snapshot.paramMap.get('id');
     const token = localStorage.getItem('token');
+
+    // Validate if user ID and token are available
     if (!this.userId || !token) {
       this.showError('User ID or TOken is Required');
       return;
@@ -46,6 +68,9 @@ export class UpdateuserComponent implements OnInit {
     }
   }
 
+  /**
+   * Updates user details by calling the AuthService.
+   */
   async updateUser() {
     const confitm = confirm('Are you sure you wanna update this user');
     if (!confirm) return;
@@ -54,6 +79,8 @@ export class UpdateuserComponent implements OnInit {
       if (!token) {
         throw new Error('Token not found');
       }
+
+      // Update user details via the AuthService
       const res = await this.authService.updateUSer(
         this.userId,
         this.userData,
@@ -71,6 +98,10 @@ export class UpdateuserComponent implements OnInit {
     }
   }
 
+  /**
+   * Displays an error message for a limited duration.
+   * @param mess The error message to display.
+   */
   showError(mess: string) {
     this.errorMessage = mess;
     setTimeout(() => {
