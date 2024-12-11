@@ -1,3 +1,10 @@
+/**
+ * Author: Enkh-Amgalan G.
+ * 
+ * This component represents the application sidebar. It dynamically adjusts its 
+ * content based on the user's authentication and role (admin or regular user).
+ */
+
 import { Component } from '@angular/core';
 import { RouterModule, RouterOutlet, RouterLink } from '@angular/router';
 import { TooltipModule } from 'primeng/tooltip';
@@ -25,6 +32,10 @@ export class SidebarComponent {
   isAdmin: boolean = false;
   isUser: boolean = false;
 
+  /**
+   * Lifecycle hook that initializes the component.
+   * Sets the authentication and role statuses using AuthService.
+   */
   ngOnInit(): void {
     this.isAuthenticated = this.authService.isAuthenticated();
     console.log('isAuthenticated', this.isAuthenticated);
