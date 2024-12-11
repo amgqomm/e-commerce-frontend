@@ -12,5 +12,5 @@ import { SidebarComponent } from './pages/layout/sidebar/sidebar.component';
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'Angulaaar';
+  title = 'Angular';
 }
