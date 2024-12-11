@@ -21,7 +21,7 @@
           <div class="title-of-product">{{ product?.name }}</div>
           <div class="price">
             <span class="dollar">{{ product?.price }} $</span>
-            <span class="dollar"> ⭐{{ product?.rating }}</span>
+            <span class="rating"> ⭐{{ product?.rating }}</span>
           </div>
           <div class="size-selector">
             <div class="size-container">
@@ -44,12 +44,9 @@
   
               <button class="counter-btn" (click)="increment()">+</button>
             </div>
-            <p-button label="Add To Cart" (click)="addToCart(product.id)" />
           </div>
         </div>
         <div class="review">
-          <p-tabView>
-            <p-tabPanel class="header" header="Details ">
               <p>
                 Sed us et iusto odio dignissimos ducimus qui blanditiis
                 praesentium voluptatum deleniti atque corrupti quos dolores et
@@ -59,8 +56,6 @@
                 expedita distinctio. Nam libero tempore, cum soluta nobis est
                 eligendi optio cumque nihil impedit quo minus.
               </p>
-            </p-tabPanel>
-            <p-tabPanel class="header" header="  Reviews">
               <p>
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                 accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
@@ -70,8 +65,6 @@
                 eos qui ratione voluptatem sequi nesciunt. Consectetur, adipisci
                 velit, sed quia non numquam eius modi.
               </p>
-            </p-tabPanel>
-            <p-tabPanel class="header" header="Shipping and Returns">
               <p>
                 At vero eos et accusamus et iusto odio dignissimos ducimus qui
                 blanditiis praesentium voluptatum deleniti atque corrupti quos
@@ -81,8 +74,6 @@
                 facilis est et expedita distinctio. Nam libero tempore, cum soluta
                 nobis est eligendi optio cumque nihil impedit quo minus.
               </p>
-            </p-tabPanel>
-          </p-tabView>
         </div>
       </div>
     </div>

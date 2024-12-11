@@ -8,10 +8,6 @@
 
 import { Component } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
-import { AutoCompleteModule } from 'primeng/autocomplete';
-import { IconFieldModule } from 'primeng/iconfield';
-import { InputIconModule } from 'primeng/inputicon';
-import { InputTextModule } from 'primeng/inputtext';
 import { CommonModule } from '@angular/common';
 import { AuthService } from '../../../services/auth-service';
 
@@ -19,10 +15,6 @@ import { AuthService } from '../../../services/auth-service';
   selector: 'app-header',
   standalone: true,
   imports: [
-    AutoCompleteModule,
-    IconFieldModule,
-    InputIconModule,
-    InputTextModule,
     RouterOutlet,
     RouterModule,
     CommonModule,

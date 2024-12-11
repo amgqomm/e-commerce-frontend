@@ -7,7 +7,6 @@
 
 import { Component } from '@angular/core';
 import { RouterModule, RouterOutlet, RouterLink } from '@angular/router';
-import { TooltipModule } from 'primeng/tooltip';
 import { CommonModule } from '@angular/common';
 import { AuthService } from '../../../services/auth-service';
 import { log } from 'console';
@@ -16,7 +15,6 @@ import { log } from 'console';
   selector: 'app-sidebar',
   standalone: true,
   imports: [
-    TooltipModule,
     RouterModule,
     RouterOutlet,
     RouterLink,

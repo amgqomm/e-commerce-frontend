@@ -9,24 +9,14 @@ import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../../../services/product-service';
 import { Product } from '../../../models/product';
 import { FormsModule } from '@angular/forms';
-import { InputTextareaModule } from 'primeng/inputtextarea';
-import { InplaceModule } from 'primeng/inplace';
 import { CommonModule } from '@angular/common';
-import { InputSwitchModule } from 'primeng/inputswitch';
-import { DropdownModule } from 'primeng/dropdown';
-import { RatingModule } from 'primeng/rating';
 
 @Component({
   selector: 'app-new-product',
   standalone: true,
   imports: [
     FormsModule,
-    InputTextareaModule,
-    InplaceModule,
-    InputSwitchModule,
     CommonModule,
-    DropdownModule,
-    RatingModule,
   ],
   templateUrl: './new-product.component.html',
   styleUrls: ['./new-product.component.css'],

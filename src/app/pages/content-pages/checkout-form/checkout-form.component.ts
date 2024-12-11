@@ -5,7 +5,6 @@
  */
 
 import { Component } from '@angular/core';
-import { CheckboxModule } from 'primeng/checkbox';
 import { FormsModule } from '@angular/forms';
 import { CartService } from '../../../services/cart-service';
 import { Order } from '../../../models/order';
@@ -13,7 +12,7 @@ import { Order } from '../../../models/order';
 @Component({
   selector: 'app-checkout-form',
   standalone: true,
-  imports: [CheckboxModule, FormsModule],
+  imports: [FormsModule],
   templateUrl: './checkout-form.component.html',
   styleUrl: './checkout-form.component.css',
 })

@@ -9,10 +9,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { InputNumberModule } from 'primeng/inputnumber';
 import { FormsModule } from '@angular/forms';
-import { TabViewModule } from 'primeng/tabview';
-import { ButtonModule } from 'primeng/button';
 import { ActivatedRoute } from '@angular/router';
 import { ProductService } from '../../../services/product-service';
 import { Router } from '@angular/router';
@@ -24,10 +21,7 @@ import { CartService } from '../../../services/cart-service';
   imports: [
     RouterOutlet,
     CommonModule,
-    InputNumberModule,
     FormsModule,
-    TabViewModule,
-    ButtonModule,
   ],
   templateUrl: './product-overview.component.html',
   styleUrls: ['./product-overview.component.css'],
