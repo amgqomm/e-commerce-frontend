@@ -1,3 +1,11 @@
+/**
+ * Author: Khanjiguur A.
+ * 
+ * This component is responsible for displaying a list of products. It fetches and displays 
+ * top-rated products as well as a complete list of products using the ProductService. 
+ * The component utilizes custom product card components for rendering individual products.
+ */
+
 import { Component, OnInit } from '@angular/core';
 import { ProductCardComponent } from '../../../components/product-card/product-card.component';
 import { CommonModule } from '@angular/common';
@@ -5,6 +13,7 @@ import { ProductCardWithCartComponent } from '../../../components/product-card-w
 import { Product } from '../../../models/product';
 import { ProductService } from '../../../services/product-service';
 import { DataViewModule } from 'primeng/dataview';
+
 @Component({
   selector: 'app-product-list',
   standalone: true,
@@ -18,16 +27,20 @@ import { DataViewModule } from 'primeng/dataview';
   styleUrl: './product-list.component.css',
 })
 export class ProductListComponent implements OnInit {
-  products: Product[] = [];
-  products1: Product[] = [];
+  topProducts: Product[] = [];
+  allProducts: Product[] = [];
+
   constructor(private productService: ProductService) {}
 
   ngOnInit(): void {
+    // Fetches and assigns top-rated products.
     this.productService.getTopRatedProducts().subscribe((data) => {
-      this.products = data;
+      this.topProducts = data;
     });
+    
+    // Fetches and assigns all available products.
     this.productService.getProducts().subscribe((data) => {
-      this.products1 = data;
+      this.allProducts = data;
     });
   }
 }

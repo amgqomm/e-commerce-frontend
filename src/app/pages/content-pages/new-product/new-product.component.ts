@@ -1,5 +1,12 @@
+/**
+ * Author: Khanjiguur A.
+ * 
+ * This component provides functionality for creating a new product. It includes a form for entering product details, 
+ * options to add and upload product images, and methods to manage the product's data and its UI interactions.
+ */
+
 import { Component, OnInit } from '@angular/core';
-import { ProductService } from '../../../services/product.service';
+import { ProductService } from '../../../services/product-service';
 import { Product } from '../../../models/product';
 import { FormsModule } from '@angular/forms';
 import { InputTextareaModule } from 'primeng/inputtextarea';
@@ -8,6 +15,7 @@ import { CommonModule } from '@angular/common';
 import { InputSwitchModule } from 'primeng/inputswitch';
 import { DropdownModule } from 'primeng/dropdown';
 import { RatingModule } from 'primeng/rating';
+
 @Component({
   selector: 'app-new-product',
   standalone: true,
@@ -29,15 +37,20 @@ export class NewProductComponent implements OnInit {
     { label: 'Category 2', value: 'Category 2' },
     { label: 'Category 3', value: 'Category 3' },
   ];
+
   colors: { label: string; value: string }[] = [
     { label: 'Cyan', value: 'Cyan' },
     { label: 'Indigo', value: 'Indigo' },
     { label: 'Purple', value: 'Purple' },
     { label: 'Bluegrey', value: 'Bluegrey' },
   ];
+
   product: Product = new Product();
+
   addImageUrls: string[] = [];
+
   cntr: number = 0;
+
   displayStyle: string = 'block';
   displayStylee: string = 'none';
 
@@ -47,6 +60,7 @@ export class NewProductComponent implements OnInit {
     this.product.price = 0;
   }
 
+  // Handles form submission to create a new product.
   onSubmit() {
     this.productService.createProduct(this.product).subscribe((response) => {
       console.log('Product created:', response);
@@ -54,6 +68,7 @@ export class NewProductComponent implements OnInit {
     this.onDiscard();
   }
 
+  // Adds an input field for a new image URL.
   addInput() {
     this.addImageUrls.push(this.product.imageUrls[this.cntr]);
     if (this.cntr < 3) {
@@ -66,6 +81,7 @@ export class NewProductComponent implements OnInit {
     }
   }
 
+  // Handles the upload of product images.
   uploadImage() {
     console.log(this.product.imageUrls);
     this.cntr = 0;
@@ -79,6 +95,7 @@ export class NewProductComponent implements OnInit {
     console.log(this.product.stock);
   }
 
+  // Resets the product form and all associated fields.
   onDiscard() {
     this.product.name = '';
     this.product.category = '';
