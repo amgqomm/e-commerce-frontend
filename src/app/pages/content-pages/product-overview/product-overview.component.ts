@@ -46,27 +46,29 @@ export class ProductOverviewComponent implements OnInit {
    */
   loadProductData(id: number): void {
     this.productService.getDataById(id).subscribe((response) => {
-      this.product = response;
-      this.images = this.product.imageUrls;
-      this.selectedImage = this.images[0];
-    });
-  }
-
-  ngOnInit() {
-    // Subscribes to route parameters to get the product ID and loads the product data.
-    this.selectedImage = this.images[0];
-    this.route.params.subscribe((params) => {
-      this.id = +params['id'];
-      this.loadProductData(this.id);
+      const { imageUrls, ...productData } = response;
+      this.product = productData;
+      this.images = imageUrls;
+      this.selectFirstImage();
     });
   }
 
   /**
-   * Updates the currently selected image.
+   * Updates the first selected image.
    * @param image - The image URL to be displayed.
    */
-  selectImage(image: string): void {
-    this.selectedImage = image;
+  selectFirstImage(): void {
+    if (this.images && this.images.length > 0) {
+      this.selectedImage = this.images[0];
+    }
+  }
+
+  ngOnInit() {
+    // Subscribes to route parameters to get the product ID and loads the product data.
+    this.route.params.subscribe((params) => {
+      this.id = +params['id'];
+      this.loadProductData(this.id);
+    });
   }
 
   increment() {
