@@ -77,7 +77,12 @@
     font-weight: 500 !important;
     display: block !important;
   }
-  
+  .rating{
+    color: white;
+    font-size: 1.75rem !important;
+    font-weight: 500 !important;
+    display: block !important;
+  }
   .number {
     display: flex;
     justify-content: center;

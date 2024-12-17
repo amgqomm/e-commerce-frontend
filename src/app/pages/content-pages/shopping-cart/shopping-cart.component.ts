@@ -13,13 +13,12 @@ import { Router } from '@angular/router';
 import { CartItemsComponent } from '../../../components/cart-items/cart-items.component';
 import { Product } from '../../../models/product';
 import { CartDetails } from '../../../models/cart-details';
-import { ButtonModule } from 'primeng/button';
 import { ProductService } from '../../../services/product-service';
 
 @Component({
   selector: 'app-shopping-cart',
   standalone: true,
-  imports: [CommonModule, ButtonModule, CartItemsComponent],
+  imports: [CommonModule, CartItemsComponent],
   templateUrl: './shopping-cart.component.html',
   styleUrls: ['./shopping-cart.component.css'],
 })
